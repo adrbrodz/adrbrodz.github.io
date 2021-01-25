@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklet App</title>
+</head>
+<body>
+    <div id="app-container">
+        <div id="top-bar">
+            <div id="logo" onclick="location.reload();">
+                <h1 id="logo-text" >Bookplate</h1> <!-- href -->
+            </div>
+            <div id="search-box">
+                <input type="search" id="site-search" placeholder="Search for books...">
+                <button id="search-button" onclick="searchTitle()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+            <div id="top-icons">
+                <button id="favorites-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0
+                         00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
+                <button id="collection-counter">0</button>
+                <button id="language-button">EN</button>
+            </div>
+        </div>
+        <div id="book-interface">
+            <div id="hero-text">
+                <h2>Build your library</h2>
+                <h3>Start searching for books</br>to expand your collection<h3>
+                <button id="hero-view-all">View all</button>
+            </div>
+            <div id="hero-image">
+                <img src='https://svgshare.com/i/TD3.svg' title='reading' />
+            </div>
+        </div>
+    <div id="bookshelf">
+        <div id="current-shelf">
+            <button class="shelf-button" onclick="changeShelf('finished')" id="finished-shelf">
+                <h3>Finished</h3>
+            </button>
+            <button class="shelf-button" onclick="changeShelf('reading')" id="reading-shelf">
+                <h3>Reading</h3>
+            </button>
+            <button class="shelf-button" onclick="changeShelf('wishlist')" id="wishlist-shelf">
+                <h3>Wishlist</h3>
+            </button>
+            <button id="view-all">View All</button>
+        </div>
+            <div id="books-container">
+        </div>
+    </div>
+</body>
+</html>
