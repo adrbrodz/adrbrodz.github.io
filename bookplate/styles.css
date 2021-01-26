@@ -20,7 +20,7 @@ body {
     min-width: 100rem;
     width: 75%;
     min-height: 70rem;
-    height: 81.5%;
+    height: 82.5%;
     border-radius: 1.8rem;
 }
 #top-bar {
@@ -252,7 +252,7 @@ h2 {
     display: flex;
     margin-left: 7rem;
     margin-right: 7rem;
-    height: 22rem;
+    height: 23rem;
     overflow: scroll;
 }
 #similar-books-container h2 {
