@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 body { background-color: rgb(238, 231, 212);}
+#top-bar {
+    display: flex;
+}
+#logo {
+    margin: 1.6rem;
+}
+#logo img {
+    width: 8rem;
+}
+#new-note-button {
+    background-color: #56ca73;
+    height: 1.8rem;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    display: flex;
+    margin: 1.75rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    margin-left: auto;
+    box-shadow: gray 2px 2px; 
+}
 #edit-button {
     width: 2rem;
     background: none;
@@ -11,18 +33,6 @@ body { background-color: rgb(238, 231, 212);}
     border: none;
     padding: 0.5rem;
     margin-left: 0.175rem;
-}
-#new-note-button {
-    background-color: #56ca73;
-    color: white;
-    border: none;
-    border-radius: 0.2rem;
-    display: flex;
-    margin: 1rem;
-    padding: 0.3rem;
-    font-size: 0.9rem;
-    margin-left: auto;
-    box-shadow: gray 2px 2px; 
 }
 #savedNotes {
     margin-top: 0;
