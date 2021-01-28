@@ -66,7 +66,7 @@ body {
     flex-direction: column;
 }
 #hero {
-    overflow: auto;
+    overflow: hidden;
     margin-top: 5rem;
     height: 95vh;
     width: 100%;
@@ -141,44 +141,49 @@ body {
     margin-top: 1rem;
 }
 #right-bar {
-    width: 2rem;
+    width: 15rem;
     display: flex;
     margin-left: auto;
-    height: 85vh;
+    height: 90vh;
     writing-mode: vertical-rl;
     align-items: center;
     justify-content: flex-end;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    margin-right: 10rem;
     position: fixed;
     letter-spacing: 0.25em;
+    background: white;
 }
 #right-bar p {
     margin-bottom: 5rem;
+    margin-right: auto;
+    margin-left: 2rem;
 }
 
 /* Projects */
+#projects {
+    overflow: hidden;
+}
 .project {
     font-family: 'Lato', sans-serif;
-    padding: 5rem;
+    padding: 8rem;
     width:50%;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    height: 26rem;
+    height: 35rem;
     min-width: 80rem;
     border-radius: 2.5rem;
     margin-bottom: 5rem;
+    justify-content: center;
 }
 #bookplate {
     background:#ecdfd5;
+    margin-left: 25%;
     background-image: url("bookplate.png");
-    background-size: 50rem 40rem;
-    background-position: right;
-    background-position-y: -7rem;
-    background-position-x: right;
+    background-size: 75rem 80rem;
+    background-position: center;
+    background-position-x: 30rem;
     background-repeat: no-repeat;
 }
 #bookplate img {
@@ -198,10 +203,10 @@ body {
     font-size: 1.15rem;
 }
 #small-projects {
-    margin-left: 13rem;
+    margin-left: 20%;
     display: flex;
     flex-direction: row;
-    background: rgb(238, 231, 212);
+    background: #eee7d4;
 }
 #sticky-notes {
     display: flex;
@@ -213,7 +218,7 @@ body {
     width: 13rem;
     height: 5rem;
 }
-#memo {
+#memo, #expensetracker {
     margin-left: 8rem;
     display: flex;
     flex-direction: column;
@@ -222,7 +227,58 @@ body {
 }
 #memo img {
     display: flex;
-    margin-left: 4.75rem;
-    width: 5rem;
+    margin-left: 5rem;
+    width: 5.25rem;
     height: 5rem;
+}
+#expensetracker img {
+    margin-left: 3.5rem;
+    width: 8rem;
+    height: 6rem;
+}
+#expensetracker h2 {   
+    margin-top: 1rem;
+}
+#ribotype {
+    margin-left: 25%;
+    background-color: #cce2f5;
+    background-image: url("ribotype.png");
+    background-size: 55rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 28.5rem;
+    background-position-y: -7rem;
+}
+#ribotype img {
+    width: 15rem;
+    height: 5rem;
+}
+/* Contact */
+#contact-container {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 20rem;
+    margin: auto;
+}
+#contact-container #message {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+#contact-container #location {
+    font-weight: 400;
+    color: gray;
+    font-size: 1.25rem;
+}
+#contact-container #email {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+#contact-container #phone {
+    font-weight: 400;
+    font-size: 1.25rem;
 }
