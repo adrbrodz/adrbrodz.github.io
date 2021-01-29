@@ -195,7 +195,7 @@ a {
 #bookplate {
     background:#ecdfd5;
     margin-left: 20%;
-    background-image: url("src/bookplate.png");
+    background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/bookplate.png");
     background-size: 75rem 80rem;
     background-position: center;
     background-position-x: 30rem;
@@ -257,7 +257,7 @@ a {
 #ribotype {
     margin-left: 20%;
     background-color: #cce2f5;
-    background-image: url("src/ribotype.png");
+    background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/ribotype.png");
     background-size: 55rem;
     background-repeat: no-repeat;
     background-position: right;
