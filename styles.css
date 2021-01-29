@@ -60,6 +60,27 @@ body {
     color: gray;
 }
 
+/* Right Bar */
+#right-bar {
+    width: 15rem;
+    padding: 3rem;
+    display: flex;
+    height: 90vh;
+    writing-mode: vertical-rl;
+    align-items: center;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    position: fixed;
+    letter-spacing: 0.25em;
+    background: white;
+}
+#right-bar p {
+    margin-bottom: 5rem;
+    margin-right: auto;
+}
+
 /* Hero Section */
 #main-container {
     display: flex;
@@ -140,26 +161,6 @@ body {
 #instagram img {
     margin-top: 1rem;
 }
-#right-bar {
-    width: 15rem;
-    display: flex;
-    margin-left: auto;
-    height: 90vh;
-    writing-mode: vertical-rl;
-    align-items: center;
-    justify-content: flex-end;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    position: fixed;
-    letter-spacing: 0.25em;
-    background: white;
-}
-#right-bar p {
-    margin-bottom: 5rem;
-    margin-right: auto;
-    margin-left: 2rem;
-}
 
 /* Projects */
 #projects {
@@ -179,7 +180,7 @@ body {
 }
 #bookplate {
     background:#ecdfd5;
-    margin-left: 25%;
+    margin-left: 20%;
     background-image: url("bookplate.png");
     background-size: 75rem 80rem;
     background-position: center;
@@ -203,7 +204,7 @@ body {
     font-size: 1.15rem;
 }
 #small-projects {
-    margin-left: 20%;
+    margin-left: 15%;
     display: flex;
     flex-direction: row;
     background: #eee7d4;
@@ -240,7 +241,7 @@ body {
     margin-top: 1rem;
 }
 #ribotype {
-    margin-left: 25%;
+    margin-left: 20%;
     background-color: #cce2f5;
     background-image: url("ribotype.png");
     background-size: 55rem;
@@ -253,6 +254,50 @@ body {
     width: 15rem;
     height: 5rem;
 }
+/* Let's Chat */
+#lets-chat {
+    display: flex;
+    padding: 5rem;
+    margin: auto;
+    margin-top: 30vh;
+    width: 50%;
+    border-radius: 1.5rem;
+    background-color: rgb(250, 236, 238);
+    min-width: 40rem;
+    max-width: 50rem;
+    height: 15rem;
+}
+#lets-chat-text {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+}
+#lets-chat h1 {
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+#lets-chat h2 {
+    display: flex;
+    margin-top: 4.5rem;
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#lets-chat button {
+    width: 11.2rem;
+    height: 4rem;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: #f36e21;
+    border-radius: 1rem;
+}
 /* Contact */
 #contact-container {
     display: flex;
@@ -263,10 +308,11 @@ body {
     width: 50%;
     height: 20rem;
     margin: auto;
+    margin-top: 5rem;
 }
 #contact-container #message {
     margin-bottom: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.55rem;
 }
 #contact-container #location {
     font-weight: 400;
@@ -281,4 +327,56 @@ body {
 #contact-container #phone {
     font-weight: 400;
     font-size: 1.25rem;
+}
+
+/* Socials Bottom */
+#socials-bottom {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+.social-button-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: rgb(250, 244, 255);
+    margin: 0.5rem;
+}
+#socials-bottom img {
+    width: 1.5rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    width: 90%;
+    height: 0.7rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("footer.svg")
+}
+
+/* Bottom Bar */
+#bottom-bar {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 3.5rem;
+    width: 95%;
+}
+#bottom-bar h1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: 3rem;
+    font-weight: 400;
+    font-size: 1rem;
 }
