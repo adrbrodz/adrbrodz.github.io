@@ -73,24 +73,18 @@ a {
 
 /* Right Bar */
 #right-bar {
-    padding: 3rem;
     height: 90vh;
     writing-mode: vertical-rl;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    position: fixed;
+    float: right;
     letter-spacing: 0.25em;
-    background: white;
-    margin-top: 45rem;
-    margin-right: 12rem;
-    display: flex;
-    margin-left: auto;
+    margin-top: 70rem;
+    right: 5rem;
 }
 #right-bar p {
     pointer-events: none;
-    margin-bottom: 5rem;
-    margin-right: auto;
 }
 
 /* Hero Section */
@@ -99,7 +93,6 @@ a {
     flex-direction: column;
 }
 #hero {
-    overflow: hidden;
     margin-top: 5rem;
     height: 95vh;
     width: 100%;
@@ -111,6 +104,7 @@ a {
     margin-top: 0;
 }
 #personal-info {
+    margin-left: 10rem;
     margin-top: 25rem;
     display: flex;
     font-family: 'Lato', sans-serif;
@@ -178,10 +172,8 @@ a {
 }
 
 /* Projects */
-#projects {
-    overflow: hidden;
-}
 .project {
+    overflow: hidden;
     font-family: 'Lato', sans-serif;
     padding: 8rem;
     width:50%;
