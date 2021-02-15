@@ -1,11 +1,42 @@
-/* Add your css styles here */
-#grid {
+* {
+    display: border-box;
+    margin: 0;
+    padding: 0;
+}
+#start-button {
+    background: white;
+    display: flex;
+    margin: auto;
+    margin-top: 30%;
+}
+#plates-container {
     display: flex-box;
-    width: 360px;
+    border: solid;
+    margin: auto;
+    margin-top: 25vh;
+    width: 340px;
+    height: 230px;
+    padding: 0.8rem;
+    background-color: gold;
 }
 .plate {
+    margin: 0.2rem;
     display: inline-block;
     border: solid;
-    height: 50px;
-    width: 50px;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+img {
+    height: 100px;
+    width: 100px;
+    visibility: hidden;
+}
+#tries {
+    display: flex;
+}
+#reload-button {
+    display: flex;
+    align-self: center;
+    background: white;
 }

@@ -1,100 +1,63 @@
-// Add your javascript here
+function startGame() {
+    populateElements();
+}
+function getRandomElement(arr) {
+    return arr[Math.floor(Math.random() * arr.length)]
+}
+plates = [ "panda1", "deer1", "fox1",
+           "panda2", "deer2", "fox2" ]
 
-const plates = ["11", "12", "13", "14", "15", "16",
-        "21"
-        ,"22"
-        ,"23"
-        ,"24"
-        ,"25"
-        ,"26"
-        ,"31"
-        ,"32"
-        ,"33"
-        ,"34"
-        ,"35"
-        ,"36"
-        ,"41"
-        ,"42"
-        ,"43"
-        ,"44"
-        ,"45"
-        ,"46"
-        ,"51"
-        ,"52"
-        ,"53"
-        ,"54"
-        ,"55"
-        ,"56"
-        ,"61"
-        ,"62"
-        ,"63"
-        ,"64"
-        ,"65"
-        ,"66"]
-
-function generatePlates(func) {
-    document.getElementById("grid").innerHTML = ``;
-    for (plate in plates) {
-        document.getElementById("grid").innerHTML += 
-        `<div class="plate" onclick="${func}('${plates[plate]}')" id="${plates[plate]}">.</div>
-        `
+function populateElements() {
+    document.getElementById("plates-container").innerHTML = "";
+    for ( let plate in plates ) {
+        const plateId = getRandomElement(plates);
+        const image = plateId.substring(0, plateId.length -1)+".png";
+        if ( image == "deer.png") {
+            var imageUrl = 'https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/memo/deer.png'
+        } else if ( image == "panda.png" ) {
+            var imageUrl = 'https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/memo/panda.png'
+        } else {
+            var imageUrl = 'https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/memo/fox.png'
+        }
+        document.getElementById("plates-container").innerHTML +=
+        `<div class="plate" id="${plateId}" onclick="showImage('${plateId}','${image}')"><img id="${plateId}-image" src="${imageUrl}"></div>`
+        plates = plates.filter( plate => plate != plateId )
+    }
+    document.getElementById("plates-container").innerHTML += `<p id="tries">Tries: 0</p>`
+}
+var pair = [];
+var tries = 0;
+var score = 0;
+function showImage( plateId ) {
+    document.getElementById(plateId+"-image").style.visibility = "visible";
+    document.getElementById(plateId).style.pointerEvents = "none";
+    pair.push(plateId);
+    if ( pair.length == 2 ) {
+        checkPair();
+    }
+    if ( score == 3) {
+        setTimeout(function() {
+            window.alert("Congratulations!\nYou finished the game in "+tries+" tries!");
+        }, 500);
+        document.getElementById("tries").innerHTML =
+        `<button id ="reload-button"onclick="location.reload()">REPLAY</button>`
+        document.getElementById("tries").style.justifyContent = "center";
     }
 }
-var shipStartId = '';
-var shipStopId = '';
-var middle = '';
-function shipStart(id) {
-    shipStartId = id;
-    generatePlates("shipStop");
-    document.getElementById(id).innerHTML = "start";
-    document.getElementById("message-box").innerHTML = 
-    `Player 1, please enter the end square for your ship.`
-}
-var middleColumn = '';
-var middleRow = '';
-function shipStop(id) {
-    shipStopId = id;
-    document.getElementById(id).innerHTML = "end";
-    findMiddle();
-    middle = String(middleColumn)+String(middleRow)
-    console.log(middle)
-    document.getElementById("message-box").innerHTML = 
-    `Player 2, you have 10 guesses left. Please enter your guess by clicking a square above.`
-    document.getElementById(id).innerHTML = "end";
-    generatePlates("guessShip");
-}
-
-function findMiddle() {
-
-    const startColumn = shipStopId[0,1];
-    const startRow = shipStartId[1];
-    const endColumn = shipStopId[0,1];
-    const endRow = shipStartId[1];
-    if ( startColumn != endColumn ) {
-        middleRow=startRow;
-        if (startColumn - endColumn > 0 ) {
-            middleColumn = startColumn-1;
-        }
-        else {
-                middleColumn = Number(startColumn)+1
-            }
+function checkPair() {
+    if ( pair[0].substring(0, pair[0].length-1) != pair[1].substring(0, pair[1].length-1) ) {
+        var el1 = pair[0];
+        var el2 = pair[1];
+        setTimeout(function() {
+            document.getElementById(el1+"-image").style.visibility = "hidden";
+            document.getElementById(el1).style.pointerEvents = "auto";
+            document.getElementById(el2+"-image").style.visibility = "hidden";
+            document.getElementById(el2).style.pointerEvents = "auto";
+        }, 500);
     } else {
-        middleColumn=startColumn;
-        if (startRow - endRow > 0 ) {
-            middleRow = startRow-1;
-        }
-        else {
-                middleRow = Number(startRow)+1
-            }
+        score += 1;
     }
-}
-function guessShip(id) {
-    if (id ==shipStartId || id == shipStopId || id == middle) {
-        document.getElementById(id).innerHTML = "X";
-    }
-}
-window.onload = function() {
-    generatePlates("shipStart");
-    document.getElementById("message-box").innerHTML += 
-    `Player 1, please enter the start square for your ship.`
-}
+    tries += 1;
+    document.getElementById("tries").innerHTML = `<div id="tries"> Tries: ${tries}</div>`
+    pair = [];
+};
