@@ -197,6 +197,15 @@ a {
     background-position-x: 30rem;
     background-repeat: no-repeat;
 }
+#bookplate {
+    background:#ecdfd5;
+    margin-left: 20%;
+    background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/bookplate.png");
+    background-size: 75rem 80rem;
+    background-position: center;
+    background-position-x: 30rem;
+    background-repeat: no-repeat;
+}
 #bookplate img {
     width: 17.5rem;
     height: 5rem;
