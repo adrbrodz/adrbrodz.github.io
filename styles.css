@@ -188,14 +188,20 @@ a {
     margin-bottom: 5rem;
     justify-content: center;
 }
-#bookplate {
-    background:#ecdfd5;
+#rk-intranet {
+    border: solid 1px;
+    border-color: lightgray;
+    background: #ffffff;
     margin-left: 20%;
     background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/bookplate.png");
     background-size: 75rem 80rem;
     background-position: center;
     background-position-x: 30rem;
     background-repeat: no-repeat;
+}
+#rk-intranet img {
+    width: 17.5rem;
+    height: 5rem;
 }
 #bookplate {
     background:#ecdfd5;
