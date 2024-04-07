@@ -191,7 +191,7 @@ a {
 #rk-intranet {
     border: solid 1px;
     border-color: lightgray;
-    background: #22008a;
+    background-color: #22008a;
     margin-left: 20%;
     background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/rk-intranet-screen.png");
     background-size: 75rem;
