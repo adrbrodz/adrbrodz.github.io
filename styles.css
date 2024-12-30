@@ -199,6 +199,17 @@ a {
     background-position-x: 38rem;
     background-repeat: no-repeat;
 }
+#e-vault {
+    border: solid 1px;
+    border-color: lightgray;
+    background-color: #22008a;
+    margin-left: 20%;
+    background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/5e-vault-screen.png");
+    background-size: 75rem;
+    background-position: center;
+    background-position-x: 38rem;
+    background-repeat: no-repeat;
+}
 #rk-intranet img {
     width: 17.5rem;
     height: 5rem;
