@@ -215,7 +215,7 @@ a {
     background-color: #0A0E11;
     margin-left: 20%;
     background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/5e-vault-screen.png");
-    background-size: 75rem;
+    background-size: 70rem;
     background-position: center;
     background-position-x: 40rem;
     background-repeat: no-repeat;
@@ -225,7 +225,9 @@ a {
     height: 5rem;
 }
 #e-vault-container {
-    background-color: white;
+    background-color: #13171C;
+    border: solid 1px;
+    border-color: #2F3039;
     width: 35rem;
     padding: 3rem;
     border-radius: 10px;
@@ -233,12 +235,12 @@ a {
 #gabi-portfolio {
     border: solid 1px;
     border-color: lightgray;
-    background-color: #0A0E11;
+    background-color: white;
     margin-left: 20%;
     background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/gabi-portfolio-2.png");
-    background-size: 75rem;
+    background-size: 50rem;
     background-position: center;
-    background-position-x: 40rem;
+    background-position-x: 39rem;
     background-repeat: no-repeat;
 }
 #gabi-portfolio img {
@@ -246,7 +248,7 @@ a {
     height: 5rem;
 }
 #gabi-portfolio-container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.318);
     width: 35rem;
     padding: 3rem;
     border-radius: 10px;
@@ -462,8 +464,17 @@ footer {
     font-weight: 400;
     font-size: 1rem;
 }
-
 #vault-logo {
     font-size: xx-large;
+    color: white;
+}
+#gabi-logo {
+    font-size: xx-large;
     color: #0A0E11;
+}
+#see-vault a {
+    color: white; 
+}
+#potentas {
+    color: orange;
 }
