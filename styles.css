@@ -192,7 +192,7 @@ a {
     border: solid 1px;
     border-color: lightgray;
     background-color: #22008a;
-    margin-left: 20%;
+    margin-left: 24%;
     background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/rk-intranet-screen.png");
     background-size: 75rem;
     background-position: center;
@@ -213,7 +213,7 @@ a {
     border: solid 1px;
     border-color: lightgray;
     background-color: #0A0E11;
-    margin-left: 20%;
+    margin-left: 24%;
     background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/5e-vault-screen.png");
     background-size: 70rem;
     background-position: center;
@@ -236,9 +236,9 @@ a {
     border: solid 1px;
     border-color: lightgray;
     background-color: white;
-    margin-left: 20%;
+    margin-left: 24%;
     background-image: url("https://raw.githubusercontent.com/adrbrodz/adrbrodz.github.io/main/src/gabi-portfolio-2.png");
-    background-size: 50rem;
+    background-size: 65rem;
     background-position: center;
     background-position-x: 39rem;
     background-repeat: no-repeat;
