@@ -170,7 +170,12 @@ a {
     height: 2rem;
     filter: invert(19%) sepia(2%) saturate(2306%) hue-rotate(267deg) brightness(91%) contrast(75%);
 }
-#instagram img {
+#svgicon img {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+}
+#instagram img, #svgicon img {
     margin-top: 1rem;
 }
 
