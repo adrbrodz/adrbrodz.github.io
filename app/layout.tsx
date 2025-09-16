@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adrian Brodziński — Frontend Developer",
+  title: "Adrian Brodziński - Frontend Developer",
   description: "",
 };
 
