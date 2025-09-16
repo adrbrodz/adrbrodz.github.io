@@ -10,7 +10,7 @@ const Contact = () => {
                     </div>
                     <a href="mailto:adrbrodz@gmail.com" className="flex mx-auto">
                         <div className="flex w-min h-min m-auto p-3.5 rounded-xl bg-[#F36E21]">
-                            <p className="text-white mx-auto font-extrabold text-sm text-nowrap">LET'S CHAT!</p>
+                            <p className="text-white mx-auto font-extrabold text-sm text-nowrap">LET&apos;S CHAT!</p>
                         </div></a>
                 </div>
             </div>

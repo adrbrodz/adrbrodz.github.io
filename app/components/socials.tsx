@@ -9,7 +9,7 @@ const Socials = () => {
 
     return (
         <div className="socials">
-            {socials.map((social: any, id: number) =>
+            {socials.map((social, id: number) =>
                 <a
                     key={id}
                     href={social.href}
