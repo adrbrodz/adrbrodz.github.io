@@ -1,6 +1,7 @@
 import { Wire_One } from 'next/font/google';
 
 const wire_one = Wire_One({
+    subsets: ['latin'],
     weight: ['400']
 });
 

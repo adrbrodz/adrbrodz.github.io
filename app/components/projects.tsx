@@ -27,7 +27,7 @@ const Projects = () => {
                 <hr className="text-gray-300" />
             </div>
             {
-                projects.map((project: any, id: number) =>
+                projects.map((project, id: number) =>
                     <div key={id} className="flex-row mx-auto w-min lg:my-10">
                         <p className="font-semibold ">{project.title}</p>
                         {
