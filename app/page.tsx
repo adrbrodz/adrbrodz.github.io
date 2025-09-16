@@ -1,3 +1,4 @@
+
 import StickyHeader from "./components/stickyHeader";
 import HeroSection from "./components/heroSection";
 import Projects from "./components/projects";
@@ -17,7 +18,7 @@ export default function Home() {
       <StickyHeader />
       <HeroSection />
       <Projects />
-      <Contact />
+      <Contact /> 
       <Footer />
     </div>
   );

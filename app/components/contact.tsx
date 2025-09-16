@@ -1,6 +1,19 @@
+import Image from "next/image";
+import Socials from "./socials";
+
 const Contact = () => {
     return (
         <div>
+            <div className="mt-10  flex mx-auto">
+                <a href="/files/Adrian_Brodzinski_CV.pdf" download="Adrian_Brodzinski_CV" className="flex  mx-auto px-10 py-5 rounded-xl bg-yellow-400 shadow-xs">
+                    <Image
+                        src="/icons/cv.svg"
+                        alt="cv"
+                        height={30}
+                        width={30}
+                    />
+                    <p className="ml-2 text-white m-auto font-extrabold text-sm text-nowrap">DOWNLOAD CV</p>
+                </a></div>
             <div id="contact" className="contact">
                 <div className="interested">
                     <div className="flex-row my-auto">
@@ -14,7 +27,8 @@ const Contact = () => {
                         </div></a>
                 </div>
             </div>
-            <div className="flex mt-15 px-10 w-full">
+
+            <div className="flex mt-10 px-10 w-full">
                 <div className="flex-row w-full justify-center align-center text-center">
                     <div className="flex text-center  font-bold ">
                         <p className="text-center mx-auto">Stay Connected</p>
@@ -31,6 +45,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <Socials />
         </div>
 
     )
